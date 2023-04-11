@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/**nav**/
+nav{
+    text-align: center;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+nav a{
+    color: #DDDDDD;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: large;
+    padding: 1rem;
+    transition: 0.5s;
+    display: block;
+}
+
+nav a:hover{
+    color: white;
+}
+/**header**/
+header{
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/1468704/pexels-photo-1468704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    border-radius: 50%;
+}
+
+header p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/**about**/
+.about{
+    background-color: #222831;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.about aside{
+    width: 50%;
+}
+
+.aside1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about-title{
+    font-size: xx-large !important;
+    border-bottom: 2px solid #F05454;
+    width: fit-content;
+}
+
+.aside2{
+    display: flex;
+    align-items: center;
+}
+
+.aside2 div{
+    text-align: justify;
+    width: 50%;
+}
+
+.aside2 div p{
+    color: #DDDDDD;
+    font-size: large;
+    font-weight: bold;
+}
+
+aside img{
+    margin: auto;
+    width: 400px;
+    height: 600px;
+    box-shadow: 20px 20px #F05454;
+}
+
+.icons a{
+    color: #ccc;
+    font-size: large;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.icons:hover{
+    color: white;
+}
+/**skills**/
+.service{
+    background-color: #30475E;
+    height: 90vh;
+    width: 100%;
+    padding-top: 10vh;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.title1{
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    border: 2px solid #F05454;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card i{
+    color: #F05454;
+    font-size: 100px !important;
+}
+
+.card-title{
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+
+.card-text{
+    text-align: justify;
+    color: white;
+    font-size: large;
+}
+
+/**portfolio**/
+.portfolio{
+        background-color: #222831;
+        height: 90vh;
+        width: 100%;
+        padding-top: 10vh;
+}
+
+.card-container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.card a{
+    color: #F05454;
+    border: 1px solid #F05454;
+    font-weight: bold;
+    font-size: large;
+    opacity: 0.5;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.card a:hover{
+    opacity: 1;
+}
+/**footer**/
+footer{
+    background-color: #222831;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+footer a{
+    color: #DDDDDD;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+footer a:hover{
+    color: white;
+}
+
+.link1{
+    width: 50%;
+}
+
+.link2{
+    width: 50%;
+    text-align: end;
+}
+/**media**/
+@media only screen and (max-width: 600px) {
+      .about{
+        display: block;
+        height: 95vh;
+        width: 100%;
+        padding-top: 5vh;
+      }
+      .about aside{
+        width: 90%;
+        padding: 1rem;
+    }
+    .aside2{
+        align-items: center;
+        padding: 1rem;
+    }
+    .aside2 div{
+        text-align: justify;
+        width: 100%;
+    }
+
+    .aside2 div p{
+        text-align: start;
+    }
+    aside img{
+        width: 250px;
+        height: 300px;
+    }
+    .service{
+        overflow-y: scroll;
+    }
+    .card-container{
+        display: flex;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .title1{
+        text-align: center;
+    }
+    .card1{
+        min-width: 300px;
+        margin-left: 1rem;
+    }
+    .card-container1{
+        flex-wrap: wrap;
+    }
+    .portfolio{
+        overflow-y: scroll;
+    }
+}
