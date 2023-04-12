@@ -5,6 +5,9 @@
     text-align: justify;
 }
 
+p{
+    color: white;
+
 html{
     scroll-behavior: smooth;
 }
