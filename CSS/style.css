@@ -338,4 +338,8 @@ footer a:hover{
         .aside2 div{
             width: 100%;
         }
+    
+        .about aside{
+            padding: 1rem;
+        }
     }
